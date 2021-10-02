@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 5%, rgba(0, 212, 255, 1) 100%);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 15px;
+    color: rgb(90, 209, 209);
+    font-size: 1.4em;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 1em 0 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 0.7em;
+}
+
+.info,
+.info2 {
+    font-size: 1.2em;
+}
+
+
+/* Styling the links */
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #f1ffff;
+}
+
+a:hover {
+    color: rgb(178, 247, 181);
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(141, 211, 144);
+}
+
+.main__hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing__container,
+.main__hero {
+    padding: 4em 0 0 0;
+    min-height: 100vh;
+}
+
+.main__hero h1 {
+    font-size: 3em;
+}
+
+.bounce {
+    animation: rotate 5s linear 0s infinite forwards reverse;
+}
+
+.bounce img {
+    max-width: 100%;
+}
+
+
+/* Section Active Styles Keyframe Animations */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg) translate(-1em) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translate(-1em) rotate(-360deg);
+    }
+}
+
+footer {
+    background-color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-txt {
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .logo {
+        display: none;
+    }
+    .main__hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+}
